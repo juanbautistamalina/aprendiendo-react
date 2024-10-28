@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #1e1e1e; /* Fondo oscuro */
+  color: #ffffff; /* Texto claro */
+}
+
+h1 {
+  color: #ffffff; /* Título claro */
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.status {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff; /* Texto claro */
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.square {
+  background: #2c2c2c; /* Fondo oscuro para los cuadrados */
+  border: 1px solid #999;
+  float: left;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 60px;
+  height: 60px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 70px; /* Aumentar el ancho de los cuadrados */
+  cursor: pointer; /* Cambiar el cursor a puntero */
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.game-info {
+  color: #ffffff;
+  margin-left: 80px; /* Aumentar el espacio entre el tablero y la lista de movimientos */
+  margin-top: 20px; /* Margen superior para alejar la lista del tablero */
+}
+
+.game-info ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+.game-info li {
+  margin-bottom: 10px;
+}
+
+.game-info button {
+  background-color: #444444; /* Fondo oscuro para los botones */
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.game-info button:hover {
+  background-color: #666666; /* Color más claro al hacer hover */
+}
